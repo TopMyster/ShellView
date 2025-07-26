@@ -1,4 +1,3 @@
-// main.js
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 
@@ -6,11 +5,13 @@ function createWindow () {
   const win = new BrowserWindow({
     width: 670,
     height: 470,
-    frame: false,
-    transparent: true,
+    frame: true,
     icon: path.join(__dirname, 'assets', 'icon.icns'),
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'preload.js'),
+      webviewTag: true,
+      contextIsolation: false,
+      nodeIntegration: true
     }
   });
 

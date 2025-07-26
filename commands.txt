@@ -1,4 +1,4 @@
-to /User/Name/Downloads
+to (/User/Name/Downloads)
 -Goes to stated directory
 
 help
@@ -12,3 +12,6 @@ affirmatioms
 
 say
 -Says text
+
+ai (whats 10+10?)
+-Asks ai your following query
