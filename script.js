@@ -9,11 +9,13 @@ document.addEventListener('keydown', function(e) {
             view.src = text.value.slice(2)
         } else if (text.value.startsWith('say')) {
             const txt = text.value.slice(3)
-            const utterance = new SpeechSynthesisUtterance(txt);
-            utterance.pitch = .5;
-            window.speechSynthesis.speak(utterance);
+            const utterance = new SpeechSynthesisUtterance(txt)
+            utterance.pitch = .5
+            window.speechSynthesis.speak(utterance)
         } else if (text.value.startsWith('to')) {
-            view.src = text.value.slice(2)
+           const target = text.value.slice(2).trim()
+           const fullPath = path.resolve('/', target)
+           view.src = 'file://' + fullPath
         } else if (text.value.startsWith('time')) {
             view.src = 'home.html'
         } else if (text.value.startsWith('ai')) {
