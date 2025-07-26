@@ -1,0 +1,50 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background-color: black;
+      color: white;
+    }
+
+#view {
+    transform: scale(0.9);
+    width: calc(500vw);
+    height: 250px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform-origin: bottom left;
+    background-color: white;
+}
+
+#userinput {
+    width: calc(500vw);
+    height: 15px;
+    top: 23px;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+#terminalicon {
+    margin-left: 5px;
+    color: white;
+    animation: blink 1.3s infinite;
+}
+
+@keyframes blink {
+    0% {
+        color: white;
+    } 50% {
+        opacity: 20%;
+    } 100% {
+        opacity: 100%;
+    }
+}
+
+#user {
+    display: flex;
+}

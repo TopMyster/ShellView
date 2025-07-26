@@ -1,0 +1,14 @@
+to /User/Name/Downloads
+-Goes to stated directory
+
+help
+-goes to commands.txt
+
+time 
+-Gives current time
+
+affirmatioms
+-Gives affirmatioms
+
+say
+-Says text
