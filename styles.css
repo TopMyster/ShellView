@@ -59,3 +59,21 @@ input:focus {
 #user {
     display: flex;
 }
+
+#browser {
+    display: none;
+    transform: scale(0.9);
+    width: calc(110vw);
+    height: 200vh;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform-origin: bottom left;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
